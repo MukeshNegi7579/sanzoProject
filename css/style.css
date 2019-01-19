@@ -1,0 +1,489 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 55px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: #fff;
+  border-bottom: 2px solid #d0d0d0;
+}
+/**** back to top button css****/
+#button {
+  display: inline-block;
+  background-color: #555;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  margin: 30px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color 0.3s;
+  z-index: 1000;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #ff9800;
+}
+#button:active {
+  background-color: #333;
+}
+
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+#button {
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+/************ back to top css finished here************/
+.content-heading {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.content-heading p {
+  font-size: 20px;
+}
+
+.content-heading h2 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 900;
+}
+.content-heading.blk-con-head h2 {
+  color: #2e4053;
+}
+
+.logo-box h2 {
+  float: left;
+  width: 30%;
+  font-size: 70px;
+  line-height: 44px;
+  margin-top: 1px;
+  color: gray;
+  font-weight: 500;
+}
+.logo-box h2 span {
+  color: green;
+}
+.menu-box {
+  float: right;
+  width: 65%;
+}
+.menu-list {
+  text-align: right;
+}
+
+.menu-list li {
+  display: inline-block;
+}
+
+.menu-list li a {
+  display: block;
+  margin: 20px 0px;
+  padding: 0px 10px;
+  color: #000000;
+  font-weight: bold;
+}
+
+.banner {
+  text-align: center;
+  background-color: #2e2e2f;
+  height: 500px;
+  margin-top: 0px;
+}
+.banner-section {
+  padding-top: 80px;
+  width: 90%;
+  margin: auto;
+}
+.banner p {
+  font-size: 30px;
+  background-color: #f2f4f4;
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.banner h3 {
+  font-size: 65px;
+  font-weight: 900;
+  color: #dee2e6;
+  text-transform: uppercase;
+}
+.tell-more-btn a {
+  background-color: green;
+  text-transform: uppercase;
+  display: block;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #dee2e6;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.about.cont-pd {
+  background-color: #363636;
+  text-align: center;
+  padding: 90px 0px;
+}
+
+.about p {
+  font-size: 18px;
+  color: #dee2e6;
+}
+.about-tech-names p {
+  font-size: 15px;
+  color: #dee2e6;
+}
+.about-tech-names h3 {
+  color: #f4f6f6;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin: 20px 0px;
+}
+.about-tech-icon {
+  border-radius: 100%;
+  background-color: green;
+  padding: 25px;
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+}
+
+.about1.cont-pd {
+  background-color: #e5e8e8;
+}
+.about1.cont-pd p {
+  color: #797d7f;
+}
+.about1.cont-pd ul {
+  color: black;
+  font-weight: 500;
+}
+.about1.cont-pd h4 {
+  font-weight: 700;
+  font-size: 30px;
+}
+.carousel {
+  padding-bottom: 40px;
+}
+.portfolio.cont-pd {
+  text-align: center;
+  background-color: #ffffff;
+}
+.work-history {
+  background-color: #2e2e2f;
+  font-size: 20px;
+  color: #ffffff;
+}
+.work-history-numbers {
+  text-align: center;
+  font-size: 60px;
+  font-weight: 900;
+}
+.work-history-titles {
+  text-align: center;
+  font-size: 30;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.our-partners {
+  background-color: #ffffff;
+}
+.our-team {
+  background-color: #f2f4f4;
+}
+.team-cont {
+  background: #fff;
+}
+.team-details {
+  background-color: #ffffff;
+}
+.team-mem-name {
+  text-align: center;
+}
+.team-mem-name h4 {
+  font-size: 15px;
+}
+.team-mem-name h5 {
+  font-size: 10px;
+}
+/************* contact us css**************/
+.contact-us {
+  background-color: #454545;
+}
+.content-heading.contact-para-color {
+  color: #808080;
+}
+
+.head-color.col-sm-12.col-md-6 h4 {
+  color: #cec9c9;
+  font-size: 18px;
+  font-weight: 600;
+}
+.head-color p {
+  color: #808080;
+}
+.head-color ul {
+  color: #808080;
+}
+.off-time li,
+.office-add li {
+  list-style: none;
+  color: #a5a2a2;
+}
+.street-add {
+  width: 90%;
+  padding-top: 10px;
+}
+.mob-no {
+  padding: 10px 0px;
+}
+.tiny-img-pad {
+  padding-left: 1px;
+}
+.week-days {
+  padding-top: 10px;
+}
+.sat-tim {
+  padding-top: 10px;
+}
+.sun-tim {
+  padding-top: 10px;
+}
+/**************query form****************/
+.ip-form {
+  width: 100%;
+  padding: 5px 10px;
+}
+.col-sm-6.input-field-pad {
+  padding-top: 20px;
+}
+.msg-area textarea {
+  width: 100%;
+}
+.msg-area {
+  margin-top: 15px;
+}
+.msg-area-pad {
+  padding: 10px 10px;
+}
+.msg-button {
+  text-align: center;
+  margin-top: 15px;
+}
+.msg-button a {
+  padding: 10px;
+  background: green;
+  display: inline-block;
+  color: #ffffff;
+}
+
+/* *****  Common CSS ********* */
+/* *****  Common CSS ********* */
+/* *****  Common CSS ********* */
+/* *****  Common CSS ********* */
+.cont-pd {
+  padding: 60px 0px;
+}
+.img-responsive {
+  width: 100%;
+}
+
+.team-details h4 {
+  padding-top: 10px;
+  font-weight: 800;
+}
+.team-details h5 {
+  padding-top: 10px;
+  font-size: 15px;
+  color: gray;
+}
+.team-details p {
+  padding: 10px 0px;
+}
+
+.content-heading.blk-con-head p {
+  color: gray;
+}
+.work-show-case .col-sp-0 {
+  padding: 0;
+}
+.our-work h5 {
+  text-transform: uppercase;
+  color: #fff;
+}
+.our-work {
+  border: 1px solid #fff;
+  width: 100%;
+  height: 300px;
+  content: "";
+  background-color: #454545;
+  text-align: center;
+  position: relative;
+}
+.our-work:hover .work-case {
+  display: block;
+}
+.work-case {
+  display: none;
+  background: #000;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.dis-table {
+  border: 1px solid #555;
+  display: table;
+  margin: 32px 37px;
+  width: 80%;
+  height: 80%;
+}
+.dis-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+.navbar {
+  float: right;
+}
+.navbar-nav li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.menu-ico {
+  float: right;
+  margin-top: 17px;
+  display: none;
+}
+.menu-list.block {
+  display: block;
+}
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (max-width: 1200px) {
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (max-width: 992px) {
+}
+
+/* medium devices (tablets, 768px and less)*/
+@media (max-width: 768px) {
+  .menu-list {
+    display: none;
+    width: 150px;
+    position: absolute;
+    right: 42px;
+    top: 57px;
+    background: #fff;
+  }
+  .menu-list li {
+    display: block;
+  }
+  .menu-list li a {
+    padding: 10px 15px;
+    margin: 0;
+  }
+  .menu-ico {
+    display: block;
+  }
+  .about-section p {
+    margin: 10px;
+  }
+  .about1.cont-pd ul {
+    margin-bottom: 20px;
+  }
+  .banner h3 {
+    font-size: 30px;
+  }
+  .banner p {
+    font-size: 22px;
+  }
+  .tell-more-btn button {
+    margin: 20px 0;
+  }
+  .banner {
+    height: 350px;
+  }
+  .office-add {
+    margin-bottom: 25px;
+  }
+  .creative-div-ul {
+    margin-left: 20px;
+  }
+}
+
+/* small devices (mobiles, 480px and less) */
+@media (max-width: 480px) {
+  .about-section .content-heading p {
+    font-size: 15px;
+  }
+  .about-section .content-heading h2 {
+    font-size: 25px;
+  }
+  .about-tech-names h3 {
+    font-size: 18px;
+  }
+  .content-heading.blk-con-head h2 {
+    font-size: 25px;
+  }
+  .content-heading.blk-con-head p {
+    font-size: 15px;
+  }
+  .dis-cell h5 {
+    font-size: 18px;
+  }
+  .dis-cell h6 {
+    font-size: 12px;
+  }
+  .work-history-numbers {
+    font-size: 30px;
+  }
+  .work-history-titles {
+    font-size: 20px;
+  }
+  .team-details h5 {
+    font-size: 15px;
+  }
+  .team-details p {
+    font-size: 12px;
+  }
+  .content-heading.contact-para-color h2 {
+    font-size: 25px;
+  }
+  .content-heading.contact-para-color p {
+    font-size: 15px;
+  }
+  .logo-box h2 {
+    font-size: 50px;
+  }
+}
